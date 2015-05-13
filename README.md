@@ -8,18 +8,23 @@ This code will allow you to bootload an AVR 328P-XX using an existing Arduino in
 
 For example I am on a Mac and mine is `/Users/UserName/Documents/Developer/Arduino`. Open a terminal and type:
 ```bash
-cd /path/to/ArduinoSketches/
+cd /path_to_Arduino_sketches/
 ```
+Now first we need the ISP sketch that allows us to use our arduino as an external clock source. Luckily the good people at Adafruit have taken the time to write a wonderful little code to [do just this](https://github.com/adafruit/ArduinoISP.git). All you have to do is clone this repo:
+```git
+git clone https://github.com/adafruit/ArduinoISP.git
+```
+
 If there is a directory called `hardware` type: `cd hardware`. If not, you need to create this directory. Under mac and linux use: 
 ```bash
 mkdir hardware
 cd hardware/
 ```
 
-Now we are in `/path/to/ArduinoSketches/hardware/`.
+Now we are in `/path_to_Arduino_sketches/hardware/`.
 
 2. Clone this repo.
-```bash
+```git
 git clone https://github.com/rlober/bareBonesArduino.git
 ```
 
